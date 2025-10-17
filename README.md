@@ -8,7 +8,7 @@ Collaborative **Team Portfolio Website** – A static website showcasing our tea
 | Name | Role | GitHub Username |
 |------|------|------------------|
 | **Elhadi Bachir** | Team Leader | [@Elhadi-B](https://github.com/Elhadi-B) |
-| **Hamada Chakib** | Developer | [@ch2kb](https://github.com/Ch2kb) |
+| **Hamada Chakib** | Developer | [@ch2kb](https://github.com/Ch2k5) |
 | **Boukeloua Yasser** | Developer | [@YasserBoukeloua](https://github.com/YasserBoukeloua) |
 | **Baatchia Abderrahmane** | Developer | [@Abderrahmane-41](https://github.com/Abderrahmane-41) |
 | **Hammami Chahd** | Developer | [@ChahdHammami](https://github.com/ChahdHammami) 
