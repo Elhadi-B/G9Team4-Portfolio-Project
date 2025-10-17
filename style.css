@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  min-height: 100vh;
+  background: url('https://media.istockphoto.com/id/1319949062/video/connected-line-and-dots-on-black-background.jpg?s=640x640&k=20&c=mGtbtUQpWQ55w0zJektiiR5Ynr0kLEBjh4yB7K_iExE=') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.overlap-title .overlap-space {
+  margin-left: 12px; /* or try 8px or 16px for less space */
+}
+
+.overlap-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  background: #212a3e;
+  border-radius: 7px;
+  box-shadow: 0 4px 24px #191a33a2;
+  padding: 10px 18px;
+}
+
+.overlap-title span {
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  font-weight: 800; /* slightly less than 900 */
+  font-size: 2.8vw;
+  letter-spacing: 0.03em;
+  color: #38ccfc;
+  text-shadow: 0 2px 9px #191a33;
+  position: relative;
+  line-height: 1.05;
+  padding: 0 .08em;
+}
+
+.overlap-title .overlap-space {
+  margin-left: 12px;
+}
+
+@media (max-width: 700px) {
+  .overlap-title span {
+    font-size: 5vw; /* a bit smaller for clarity */
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(25,30,52,0.82);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+.profile-card {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 6vh auto;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 8px 40px 0 #0b143b40;
+  border-radius: 24px;
+  padding: 48px 36px 44px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #38ccfc;
+  text-shadow: 0 2px 18px #232a4840;
+}
+
+.bio {
+  margin-bottom: 36px;
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: #f8fafb;
+  text-align: center;
+  text-shadow: 0 1px 8px #10192a36;
+}
+
+.info-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  background: rgba(37, 232, 255, 0.12);
+  border-radius: 20px;
+  padding: 16px 22px;
+  box-shadow: 0 0px 8px 0 #1ad8ee28;
+  font-size: 1.06em;
+}
+
+.icon {
+  font-size: 2.1em;
+  margin-right: 16px;
+  color: #38ccfc;
+}
+
+.label {
+  font-weight: 600;
+  color: #38ccfc;
+  margin-right: 10px;
+  min-width: 120px;
+}
+
+.value, .info-item a {
+  color: #f3f8ff;
+  word-break: break-all;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+  color: #fff56d;
+  transition: color 0.18s;
+}
+
+@media (max-width: 700px) {
+  .profile-card {
+    max-width: 98vw;
+    padding: 26px 5vw 30px 5vw;
+  }
+  .bio {
+    font-size: 1em;
+  }
+  .label {
+    min-width: 100px;
+  }
+}
