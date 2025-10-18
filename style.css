@@ -5,6 +5,7 @@ body {
   background: url('https://media.istockphoto.com/id/1319949062/video/connected-line-and-dots-on-black-background.jpg?s=640x640&k=20&c=mGtbtUQpWQ55w0zJektiiR5Ynr0kLEBjh4yB7K_iExE=') no-repeat center center fixed;
   background-size: cover;
   position: relative;
+  color: var(--text, #f3f8ff);
 }
 
 .overlap-title .overlap-space {
@@ -59,7 +60,7 @@ body {
   z-index: 1;
   max-width: 600px;
   margin: 6vh auto;
-  background: rgba(255,255,255,0.08);
+  background: var(--card-bg, rgba(255,255,255,0.08));
   box-shadow: 0 8px 40px 0 #0b143b40;
   border-radius: 24px;
   padding: 48px 36px 44px 36px;
@@ -67,6 +68,67 @@ body {
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(2px);
+}
+
+/* Back button placed at the top-left inside the card */
+.back-button {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 3; /* above overlay and card */
+  background: var(--accent, #38ccfc);
+  color: #0b143b;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px #0b143b40;
+}
+
+.back-button:hover {
+  background: var(--accent-2, #5fd8ff);
+}
+
+/* Profile image or placeholder */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent, #38ccfc);
+  box-shadow: 0 6px 18px #0b143b36;
+  margin-bottom: 18px;
+  background: rgba(255,255,255,0.1);
+}
+
+.photo-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px dashed var(--accent, #38ccfc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted, #a9d8ff);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* Theme support on profile pages */
+:root {
+  --text: #f3f8ff;
+  --accent: #38ccfc;
+  --accent-2: #5fd8ff;
+  --card-bg: rgba(255,255,255,0.08);
+  --muted: #a9d8ff;
+}
+
+.theme-light {
+  --text: #111827;
+  --accent: #0ea5e9;
+  --accent-2: #38bdf8;
+  --card-bg: rgba(255,255,255,0.9);
+  --muted: #64748b;
 }
 
 h1 {
