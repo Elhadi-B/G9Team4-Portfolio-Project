@@ -56,7 +56,7 @@ team-portfolio-project/
 
 ## 🌐 Deployed Website
 
-🔗 **GitHub Pages Link:** 
+🔗 **GitHub Pages Link:** [Link to our portfolio](https://elhadi-b.github.io/G9Team4-Portfolio-Project/)
 
 ---
 
